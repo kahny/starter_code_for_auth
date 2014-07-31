@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<!-- <ul >
+        <li><a href="/newposts">New Post</a></li>
+    </ul> -->
+    <h1>User List</h1>
+    <% users.forEach(function(user){ %>
+		<h3><a href="/users/<%= user.dataValues.id %>"><%= user.username %></a><h3>
+	<% }) %>
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<% posts.forEach(function(post){ %>
+    <h3> <%= post.title %> </h3>
+    <p> <%= post.createdAt %> </p>
+    <p> <a href="/users/<%= post.userId %>">Post By: User id <%= post.userId %></a></p>
+    <p><%= post.body %> </p>
+<% }) %>
+
+    <!-- create new post from this user -->
+
+
+    <br><br>
+<a href="/users">List of users</a>
+</body>
+</html>
+
+
+	

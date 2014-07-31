@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+<form action= "/users/<%= userId %>/posts" method="post">
+	<p>
+		<label for="title">Title:</label>
+		<input type="text" name="postTitle" >
+	</p>
+
+	<p>
+		<label for="body">Body:</label>
+		<input type="text" name="postBody" >
+	</p>
+	<p>
+		<input type="submit">
+	</p>
+</form>
+<p><a href="/users">User List</a></p>
+<p><a href="/">Home</a><p>
+</body>
+</html>
